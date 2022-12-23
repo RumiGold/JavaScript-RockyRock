@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>rock paper scissors</title>
+  </head>
+  <body>
+    <h1 class="logo" id="gameLogo">rock paper scissors</h1>
+    <div class="game" id="gameDiv">
+      <img src="rock.webp" alt="" id="rock" />
+      <img src="paper.jpg" alt="" id="paper" />
+      <img src="scissors.jpg" alt="" id="scissors" />
+    </div>
+
+    <div class="result" id="resultDiv">
+      <div class="display you">
+        <p>Your Choice :</p>
+        <span id="yourChoice"></span>
+      </div>
+      <div class="display pc">
+        <p>Computer Choice :</p>
+        <span id="computerChoice"></span>
+      </div>
+      <div class="display theWinner">
+        <p>Winner :</p>
+        <span id="winner"></span>
+      </div>
+      <button id="reset">Reset The game</button>
+    </div>
+
+    <div class="board">
+      <div class="display boradColor">
+        <p>Wins :</p>
+        <span id="winCount">0</span>
+      </div>
+
+      <div class="display boradColor">
+        <p>Draws :</p>
+        <span id="drawCount">0</span>
+      </div>
+
+      <div class="display boradColor">
+        <p>Loses :</p>
+        <span id="loseCount">0</span>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

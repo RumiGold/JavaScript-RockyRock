@@ -1,0 +1,115 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+}
+
+img {
+    width: 120px;
+    height: 120px;
+    cursor: pointer;
+    border-radius: 30%;
+}
+
+span {
+    font-weight: bold;
+}
+
+.logo {
+    border-bottom: 1px solid black;
+    padding: 10px;
+}
+
+.game {
+    margin-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    height: 120px;
+}
+
+.result , .board {
+    width: 400px;
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: left;
+}
+
+.gameEnd {
+    display: flex;
+    /* margin-top: 50px; */
+    
+}
+
+.gameEnd div {
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+    align-items: center;
+    gap: 10px;
+    height: 130px;
+}
+
+.display {
+    width: 100%;
+    height: 35px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+}
+
+.display p {
+    font-size: 14px;
+}
+
+.you {
+    background-color: rgba(255, 0, 0, 0.405);;
+}
+
+.pc {
+    background: rgba(0, 217, 255, 0.385);
+}
+
+.theWinner {
+    background-color: rgba(15, 124, 19, 0.319);
+}
+
+#reset {
+    width: 100%;
+    height: 35px;
+    background-color: rgba(0, 0, 128, 0.355);
+    border: none;
+    border-radius: 10px;
+    color: white;
+    cursor: pointer;
+    
+}
+
+.boradColor {
+    background-color: rgba(128, 77, 0, 0.355);
+}
+
+
+@media only screen and (max-width: 450px) {
+    img {
+        width: 100px;
+        height: 100px;
+    }
+
+    .result , .board {
+        width: 300px;
+    }
+
+}
